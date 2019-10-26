@@ -1,14 +1,20 @@
-let one, power, collisions
-one = Cube(1,0);
-power = Cube(100,-1);
+var one, power, collisions;
+one = new Cube(1,0,100);
+power = new Cube(1,-1,250);
 collisions = 0;
 while (cubeCollisionPossible(one,power) || wallCollisionPossible(one)) {
   if (wallCollisionPossible(one)) {
     collisions = collisions + 1;
-    one.changeDirection();
+    changeDirection(one);
   } else {
     collide(one,power);
     collisions = collisions + 1;
   }
+}
+function setup() {
+  createCanvas(window.innerWidth * 7 / 10,window.innerHeight * 4 / 5);
+  background(0);
+  one.show()
+  power.show()
 }
 console.log(collisions);
