@@ -11,8 +11,8 @@ a visual demonstration of finding pi using the physics of collisions
 Inspired by [3blue1brown](https://www.youtube.com/watch?v=HEfHFsfGXjs)
 
 ## Todo
-- [ ] create mainframe
-- [ ] create objects
+- [x] create mainframe
+- [x] create objects
 - [ ] single example
 - [ ] customisation
 
